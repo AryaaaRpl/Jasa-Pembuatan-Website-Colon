@@ -44,22 +44,40 @@
     </script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        .mobile-menu {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.3s ease-out;
-        }
-        .mobile-menu.open {
-            max-height: 500px;
-            transition: max-height 0.5s ease-in;
-        }
-.animate {
-  transform: translateZ(0);
-  will-change: transform, opacity;
+        /* Replace existing mobile-menu styles with transform for better performance */
+.mobile-menu {
+    transform: scaleY(0);
+    transform-origin: 'top';
+    transition: transform 0.3s ease-out;
+}
+.mobile-menu.open {
+    transform: scaleY(1);
 }
 
-.no-jank {
-  border: 1px solid #ccc;
+/* Simplify background effects */
+.fixed.inset-0.-z-10.overflow-hidden {
+    background: linear-gradient(to bottom right, #0f172a 30%, #6d28d9 100%);
+}
+.fixed.inset-0.-z-10.overflow-hidden > div {
+    display: none; /* Remove complex background elements */
+}
+
+/* Optimize image loading */
+img {
+    will-change: transform;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+}
+
+/* Disable heavy animations on mobile */
+@media (max-width: 768px) {
+    .animate-gradient, .animate-pulse {
+        animation: none !important;
+    }
+    
+    .blur-3xl {
+        filter: blur(8px); /* Reduce blur intensity */
+    }
 }
     </style>
 </head>
@@ -119,7 +137,7 @@
             <!-- Hero Section -->
             <section class="container mx-auto px-6 py-20 md:py-32">
                 <div class="max-w-4xl mx-auto text-center px-4">
-                    <h1 class="text-md md:text-sm lg:text-4xl font-bold mb-6">
+                    <h1 class="text-md md:text-lg lg:text-4xl font-bold mb-6">
                         <span class="inline-block overflow-hidden whitespace-nowrap border-r-4 border-secondary pr-1 animate-typing">
                             Kami Membangun Pengalaman Digital
                         </span>
@@ -712,6 +730,21 @@
     </footer>
 
     <script>
+
+        document.addEventListener('DOMContentLoaded', function() {
+    // Simplify animations
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    
+    if (prefersReducedMotion || window.innerWidth < 768) {
+        document.querySelectorAll('[class*="animate-"]').forEach(el => {
+            el.style.animation = 'none';
+        });
+    }
+
+    // Use passive event listeners
+    window.addEventListener('scroll', () => {}, { passive: true });
+});
+
         // Mobile menu toggle
         const mobileMenuButton = document.getElementById('mobile-menu-button');
         const mobileMenu = document.getElementById('mobile-menu');
