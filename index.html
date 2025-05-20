@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Colon - Web Development Solutions</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <script>
         tailwind.config = {
             theme: {
@@ -52,6 +53,14 @@
             max-height: 500px;
             transition: max-height 0.5s ease-in;
         }
+.animate {
+  transform: translateZ(0);
+  will-change: transform, opacity;
+}
+
+.no-jank {
+  border: 1px solid #ccc;
+}
     </style>
 </head>
 <body class="font-sans bg-dark text-light min-h-screen overflow-x-hidden">
@@ -112,18 +121,17 @@
                 <div class="max-w-4xl mx-auto text-center px-4">
                     <h1 class="text-2xl md:text-6xl font-bold mb-6">
                         <span class="inline-block overflow-hidden whitespace-nowrap border-r-4 border-secondary pr-1 animate-typing">
-                            We Build Digital Experiences
+                            Kami Membangun Pengalaman Digital
                         </span>
                     </h1>
                     <p class="text-lg md:text-xl text-gray-300 mb-12 max-w-2xl mx-auto">
-                        Colon specializes in creating cutting-edge websites and web applications that drive results. Our futuristic approach combines design and technology to deliver exceptional digital experiences.
-                    </p>
+                    Colon mengkhususkan diri dalam menciptakan situs web dan aplikasi web mutakhir yang menghasilkan hasil. Pendekatan futuristik kami menggabungkan desain dan teknologi untuk menghadirkan pengalaman digital yang luar biasa.                    </p>
                     <div class="flex flex-col sm:flex-row justify-center gap-4">
-                        <a href="#contact" class="px-8 py-4 bg-gradient-to-r from-primary to-secondary rounded-lg font-medium hover:opacity-90 transition-opacity shadow-lg shadow-purple-500/20">
-                            Get Started
+                        <a href="#about" class="px-8 py-4 bg-gradient-to-r from-primary to-secondary rounded-lg font-medium hover:opacity-90 transition-opacity shadow-lg shadow-purple-500/20">
+                            Look Around!
                         </a>
                         <a href="#portfolio" class="px-8 py-4 border border-gray-700 rounded-lg font-medium hover:bg-gray-800/50 transition-colors">
-                            View Portfolio
+                            See Projects
                         </a>
                     </div>
                 </div>
@@ -134,7 +142,7 @@
                 <div class="max-w-4xl mx-auto text-center mb-16">
                     <h2 class="text-3xl md:text-4xl font-bold mb-4">Our Services</h2>
                     <div class="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mb-6"></div>
-                    <p class="text-gray-300">We offer comprehensive web solutions tailored to your business needs</p>
+                    <p class="text-gray-300">Kami menawarkan solusi web komprehensif yang disesuaikan dengan kebutuhan bisnis Anda</p>
                 </div>
                 
                 <div class="grid md:grid-cols-3 gap-8">
@@ -144,8 +152,8 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
                             </svg>
                         </div>
-                        <h3 class="text-xl font-bold mb-3">Custom Web Development</h3>
-                        <p class="text-gray-300">Tailored websites built with the latest technologies to match your unique requirements.</p>
+                        <h3 class="text-xl font-bold mb-3">Pengembangan Web Kustom</h3>
+                        <p class="text-gray-300">Situs web yang dirancang khusus dengan teknologi terkini untuk memenuhi kebutuhan unik Anda.</p>
                     </div>
                     
                     <div class="bg-gray-900/50 backdrop-blur-sm rounded-xl p-8 border border-gray-800 hover:border-secondary transition-colors">
@@ -155,7 +163,7 @@
                             </svg>
                         </div>
                         <h3 class="text-xl font-bold mb-3">UI/UX Design</h3>
-                        <p class="text-gray-300">Beautiful, intuitive interfaces designed to enhance user engagement and satisfaction.</p>
+                        <p class="text-gray-300">Antarmuka yang cantik dan intuitif dirancang untuk meningkatkan keterlibatan dan kepuasan pengguna.</p>
                     </div>
                     
                     <div class="bg-gray-900/50 backdrop-blur-sm rounded-xl p-8 border border-gray-800 hover:border-secondary transition-colors">
@@ -165,7 +173,7 @@
                             </svg>
                         </div>
                         <h3 class="text-xl font-bold mb-3">Web Security</h3>
-                        <p class="text-gray-300">Robust security measures to protect your website and user data from potential threats.</p>
+                        <p class="text-gray-300">Tindakan keamanan yang kuat untuk melindungi situs web dan data pengguna Anda dari potensi ancaman.</p>
                     </div>
                 </div>
 
@@ -183,10 +191,10 @@
             <section class="container mx-auto px-6 py-20">
                 <div class="bg-gradient-to-r from-dark to-gray-900 rounded-2xl p-8 md:p-12 border border-gray-800">
                     <div class="max-w-3xl mx-auto text-center">
-                        <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Transform Your Digital Presence?</h2>
-                        <p class="text-gray-300 mb-8">Let's collaborate to build something extraordinary. Contact us today to discuss your project.</p>
+                        <h2 class="text-3xl md:text-4xl font-bold mb-6">Siap Mengubah Kehadiran Digital Anda?</h2>
+                        <p class="text-gray-300 mb-8">Mari berkolaborasi untuk membangun sesuatu yang luar biasa. Hubungi kami hari ini untuk mendiskusikan proyek Anda.</p>
                         <a href="#contact" class="inline-block px-8 py-4 bg-gradient-to-r from-primary to-secondary rounded-lg font-medium hover:opacity-90 transition-opacity shadow-lg shadow-purple-500/20">
-                            Get a Free Consultation
+                            Kirim Idemu!
                         </a>
                     </div>
                 </div>
@@ -199,7 +207,7 @@
                 <div class="max-w-4xl mx-auto text-center mb-16">
                     <h2 class="text-3xl md:text-4xl font-bold mb-4">Our Services</h2>
                     <div class="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mb-6"></div>
-                    <p class="text-gray-300">Comprehensive solutions to power your digital transformation</p>
+                    <p class="text-gray-300">Solusi komprehensif untuk mendukung transformasi digital Anda</p>
                 </div>
                 
                 <div class="grid md:grid-cols-2 gap-8 mb-16">
@@ -212,19 +220,13 @@
                             </div>
                             <div>
                                 <h3 class="text-xl font-bold mb-3">Custom Web Development</h3>
-                                <p class="text-gray-300 mb-4">We build websites and web applications tailored to your specific business needs using the latest technologies.</p>
+                                <p class="text-gray-300 mb-4">Kami membangun situs web dan aplikasi web yang disesuaikan dengan kebutuhan bisnis spesifik Anda menggunakan teknologi terkini.</p>
                                 <ul class="text-gray-400 space-y-2">
                                     <li class="flex items-center">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-secondary mr-2" viewBox="0 0 20 20" fill="currentColor">
                                             <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
                                         </svg>
                                         Responsive Design
-                                    </li>
-                                    <li class="flex items-center">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-secondary mr-2" viewBox="0 0 20 20" fill="currentColor">
-                                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                                        </svg>
-                                        CMS Integration
                                     </li>
                                     <li class="flex items-center">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-secondary mr-2" viewBox="0 0 20 20" fill="currentColor">
@@ -246,7 +248,7 @@
                             </div>
                             <div>
                                 <h3 class="text-xl font-bold mb-3">UI/UX Design</h3>
-                                <p class="text-gray-300 mb-4">We create intuitive and beautiful interfaces that enhance user experience and drive engagement.</p>
+                                <p class="text-gray-300 mb-4">Kami menciptakan antarmuka yang intuitif dan indah yang meningkatkan pengalaman pengguna dan mendorong keterlibatan.</p>
                                 <ul class="text-gray-400 space-y-2">
                                     <li class="flex items-center">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-secondary mr-2" viewBox="0 0 20 20" fill="currentColor">
@@ -280,7 +282,7 @@
                             </div>
                             <div>
                                 <h3 class="text-xl font-bold mb-3">Web Security</h3>
-                                <p class="text-gray-300 mb-4">We implement robust security measures to protect your website and user data from threats.</p>
+                                <p class="text-gray-300 mb-4">Kami menerapkan langkah-langkah keamanan yang kuat untuk melindungi situs web dan data pengguna Anda dari ancaman.</p>
                                 <ul class="text-gray-400 space-y-2">
                                     <li class="flex items-center">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-secondary mr-2" viewBox="0 0 20 20" fill="currentColor">
@@ -314,7 +316,7 @@
                             </div>
                             <div>
                                 <h3 class="text-xl font-bold mb-3">SEO Optimization</h3>
-                                <p class="text-gray-300 mb-4">We optimize your website to rank higher in search results and attract more organic traffic.</p>
+                                <p class="text-gray-300 mb-4">Kami mengoptimalkan situs web Anda agar mendapat peringkat lebih tinggi dalam hasil pencarian dan menarik lebih banyak lalu lintas organik.</p>
                                 <ul class="text-gray-400 space-y-2">
                                     <li class="flex items-center">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-secondary mr-2" viewBox="0 0 20 20" fill="currentColor">
@@ -342,7 +344,7 @@
 
                 <div class="text-center">
                     <a href="#contact" class="inline-block px-8 py-4 bg-gradient-to-r from-primary to-secondary rounded-lg font-medium hover:opacity-90 transition-opacity shadow-lg shadow-purple-500/20">
-                        Get Started With Our Services
+                        Ayo Ciptakan Idemu!
                     </a>
                 </div>
             </section>
@@ -354,7 +356,7 @@
                 <div class="max-w-4xl mx-auto text-center mb-16">
                     <h2 class="text-3xl md:text-4xl font-bold mb-4">Our Portfolio</h2>
                     <div class="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mb-6"></div>
-                    <p class="text-gray-300">Explore our recent projects and see how we've helped businesses like yours</p>
+                    <p class="text-gray-300">Jelajahi proyek terbaru kami dan lihat bagaimana kami membantu bisnis seperti milik Anda</p>
                 </div>
                 
                 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
@@ -362,7 +364,7 @@
                         <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Project 1" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
                         <div class="absolute inset-0 bg-gradient-to-t from-dark/90 to-transparent flex flex-col justify-end p-6">
                             <h3 class="text-xl font-bold mb-2">E-commerce Platform</h3>
-                            <p class="text-gray-300 mb-4">A fully customized online store with advanced product filtering</p>
+                            <p class="text-gray-300 mb-4">Toko online yang sepenuhnya disesuaikan dengan penyaringan produk tingkat lanjut</p>
                             <a href="#" class="text-secondary hover:text-primary transition-colors text-sm font-medium flex items-center">
                                 View Case Study
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" viewBox="0 0 20 20" fill="currentColor">
@@ -376,7 +378,7 @@
                         <img src="https://images.unsplash.com/photo-1555774698-0b77e0d5fac6?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Project 2" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
                         <div class="absolute inset-0 bg-gradient-to-t from-dark/90 to-transparent flex flex-col justify-end p-6">
                             <h3 class="text-xl font-bold mb-2">Corporate Website</h3>
-                            <p class="text-gray-300 mb-4">Modern design with interactive elements for a financial firm</p>
+                            <p class="text-gray-300 mb-4">Desain modern dengan elemen interaktif untuk perusahaan keuangan</p>
                             <a href="#" class="text-secondary hover:text-primary transition-colors text-sm font-medium flex items-center">
                                 View Case Study
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" viewBox="0 0 20 20" fill="currentColor">
@@ -390,7 +392,7 @@
                         <img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Project 3" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
                         <div class="absolute inset-0 bg-gradient-to-t from-dark/90 to-transparent flex flex-col justify-end p-6">
                             <h3 class="text-xl font-bold mb-2">Mobile Web App</h3>
-                            <p class="text-gray-300 mb-4">A progressive web application for health tracking</p>
+                            <p class="text-gray-300 mb-4">Aplikasi web progresif untuk pelacakan kesehatan</p>
                             <a href="#" class="text-secondary hover:text-primary transition-colors text-sm font-medium flex items-center">
                                 View Case Study
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" viewBox="0 0 20 20" fill="currentColor">
@@ -404,7 +406,7 @@
                         <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Project 4" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
                         <div class="absolute inset-0 bg-gradient-to-t from-dark/90 to-transparent flex flex-col justify-end p-6">
                             <h3 class="text-xl font-bold mb-2">Startup Landing Page</h3>
-                            <p class="text-gray-300 mb-4">High-converting landing page for a SaaS product</p>
+                            <p class="text-gray-300 mb-4">Halaman arahan berkonversi tinggi untuk produk SaaS</p>
                             <a href="#" class="text-secondary hover:text-primary transition-colors text-sm font-medium flex items-center">
                                 View Case Study
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" viewBox="0 0 20 20" fill="currentColor">
@@ -418,7 +420,7 @@
                         <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Project 5" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
                         <div class="absolute inset-0 bg-gradient-to-t from-dark/90 to-transparent flex flex-col justify-end p-6">
                             <h3 class="text-xl font-bold mb-2">Educational Platform</h3>
-                            <p class="text-gray-300 mb-4">Online learning system with course management</p>
+                            <p class="text-gray-300 mb-4">Sistem pembelajaran online dengan manajemen kursus</p>
                             <a href="#" class="text-secondary hover:text-primary transition-colors text-sm font-medium flex items-center">
                                 View Case Study
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" viewBox="0 0 20 20" fill="currentColor">
@@ -432,7 +434,7 @@
                         <img src="https://images.unsplash.com/photo-1526947425960-945c6e72858f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Project 6" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
                         <div class="absolute inset-0 bg-gradient-to-t from-dark/90 to-transparent flex flex-col justify-end p-6">
                             <h3 class="text-xl font-bold mb-2">Restaurant Website</h3>
-                            <p class="text-gray-300 mb-4">Online ordering system integrated with POS</p>
+                            <p class="text-gray-300 mb-4">Sistem pemesanan online terintegrasi dengan POS</p>
                             <a href="#" class="text-secondary hover:text-primary transition-colors text-sm font-medium flex items-center">
                                 View Case Study
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" viewBox="0 0 20 20" fill="currentColor">
@@ -455,30 +457,30 @@
         <section id="about" class="page hidden">
             <section class="container mx-auto px-6 py-20">
                 <div class="max-w-4xl mx-auto text-center mb-16">
-                    <h2 class="text-3xl md:text-4xl font-bold mb-4">About Colon</h2>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">Tentang Colon</h2>
                     <div class="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mb-6"></div>
-                    <p class="text-gray-300">Driving digital innovation through cutting-edge web solutions</p>
+                    <p class="text-gray-300">Mendorong inovasi digital melalui solusi web mutakhir</p>
                 </div>
                 
                 <div class="flex flex-col lg:flex-row gap-12 mb-16">
                     <div class="lg:w-1/2">
-                        <h3 class="text-2xl font-bold mb-6">Our Story</h3>
-                        <p class="text-gray-300 mb-6">Founded in 2018, Colon began as a small team of passionate developers and designers with a shared vision: to create digital experiences that not only look stunning but also deliver measurable results for our clients.</p>
-                        <p class="text-gray-300 mb-6">What started as a boutique studio has grown into a full-service digital agency, serving clients across various industries from startups to Fortune 500 companies.</p>
-                        <p class="text-gray-300">Our name "Colon" represents the connection between ideas and execution, just as the punctuation mark connects clauses to form complete thoughts.</p>
+                        <h3 class="text-2xl font-bold mb-6">Kisah Kami</h3>
+                        <p class="text-gray-300 mb-6">Didirikan pada tahun 2024, Colon dimulai sebagai tim kecil pengembang dan desainer yang bersemangat dengan visi bersama: untuk menciptakan pengalaman digital yang tidak hanya terlihat memukau tetapi juga memberikan hasil yang terukur bagi klien kami.</p>
+                        <p class="text-gray-300 mb-6">Apa yang dimulai sebagai studio butik telah berkembang menjadi agensi digital layanan lengkap, melayani klien di berbagai industri mulai dari perusahaan rintisan hingga perusahaan Fortune 500.</p>
+                        <p class="text-gray-300">Nama kami "Colon" melambangkan hubungan antara ide dan eksekusi, sama seperti tanda baca yang menghubungkan klausa untuk membentuk pemikiran yang lengkap.</p>
                     </div>
                     
                     <div class="lg:w-1/2">
                         <div class="bg-gray-900/50 backdrop-blur-sm rounded-xl p-8 border border-gray-800">
-                            <h3 class="text-2xl font-bold mb-6">Our Approach</h3>
+                            <h3 class="text-2xl font-bold mb-6">Pendekatan Kami</h3>
                             <div class="space-y-6">
                                 <div class="flex items-start">
                                     <div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center mr-4 flex-shrink-0">
                                         <span class="text-secondary font-bold">1</span>
                                     </div>
                                     <div>
-                                        <h4 class="text-lg font-bold mb-2">Discovery</h4>
-                                        <p class="text-gray-300">We begin by thoroughly understanding your business, goals, and target audience to create a tailored strategy.</p>
+                                        <h4 class="text-lg font-bold mb-2">Penemuan</h4>
+                                        <p class="text-gray-300">Kami memulai dengan memahami secara menyeluruh bisnis, tujuan, dan target audiens Anda untuk membuat strategi yang disesuaikan.</p>
                                     </div>
                                 </div>
                                 
@@ -487,8 +489,8 @@
                                         <span class="text-secondary font-bold">2</span>
                                     </div>
                                     <div>
-                                        <h4 class="text-lg font-bold mb-2">Design</h4>
-                                        <p class="text-gray-300">Our designers create intuitive, beautiful interfaces focused on user experience and conversion optimization.</p>
+                                        <h4 class="text-lg font-bold mb-2">Desain</h4>
+                                        <p class="text-gray-300">Desainer kami menciptakan antarmuka yang intuitif dan indah yang berfokus pada pengalaman pengguna dan pengoptimalan konversi.</p>
                                     </div>
                                 </div>
                                 
@@ -497,8 +499,8 @@
                                         <span class="text-secondary font-bold">3</span>
                                     </div>
                                     <div>
-                                        <h4 class="text-lg font-bold mb-2">Development</h4>
-                                        <p class="text-gray-300">We build robust, scalable solutions using the latest technologies and best coding practices.</p>
+                                        <h4 class="text-lg font-bold mb-2">Pengembangan</h4>
+                                        <p class="text-gray-300">Kami membangun solusi yang kuat dan terukur menggunakan teknologi terkini dan praktik pengkodean terbaik.</p>
                                     </div>
                                 </div>
                                 
@@ -507,8 +509,8 @@
                                         <span class="text-secondary font-bold">4</span>
                                     </div>
                                     <div>
-                                        <h4 class="text-lg font-bold mb-2">Delivery</h4>
-                                        <p class="text-gray-300">We ensure smooth deployment and provide ongoing support to keep your digital presence performing at its best.</p>
+                                        <h4 class="text-lg font-bold mb-2">Deployment</h4>
+                                        <p class="text-gray-300">Kami memastikan penerapan yang lancar dan memberikan dukungan berkelanjutan untuk menjaga kehadiran digital Anda tetap berkinerja terbaik.</p>
                                     </div>
                                 </div>
                             </div>
@@ -522,23 +524,23 @@
                         <div class="text-center">
                             <div class="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-r from-primary to-secondary p-1">
                                 <div class="w-full h-full rounded-full bg-dark overflow-hidden">
-                                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Team Member" class="w-full h-full object-cover">
+                                    <img src="img/Untitled design.png" alt="Team Member" class="w-full h-full object-cover">
                                 </div>
                             </div>
-                            <h4 class="text-xl font-bold mb-2">Sarah Johnson</h4>
-                            <p class="text-secondary mb-2">Lead Designer</p>
-                            <p class="text-gray-300">With 10+ years in UI/UX, Sarah creates interfaces that users love.</p>
+                            <h4 class="text-xl font-bold mb-2">Arya Prana Jaya</h4>
+                            <p class="text-secondary mb-2">Lead Project</p>
+                            <p class="text-gray-300">With 2+ years in Front-End & Backend, menciptakan Website Responssive yang disukai pengguna.</p>
                         </div>
                         
                         <div class="text-center">
                             <div class="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-r from-primary to-secondary p-1">
                                 <div class="w-full h-full rounded-full bg-dark overflow-hidden">
-                                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Team Member" class="w-full h-full object-cover">
+                                    <img src="img/Dannys M.jpeg" alt="Team Member" class="w-full h-full object-cover">
                                 </div>
                             </div>
-                            <h4 class="text-xl font-bold mb-2">Michael Chen</h4>
-                            <p class="text-secondary mb-2">Senior Developer</p>
-                            <p class="text-gray-300">Full-stack expert specializing in React, Node.js, and cloud architecture.</p>
+                            <h4 class="text-xl font-bold mb-2">Dannys Martha Favrillia</h4>
+                            <p class="text-secondary mb-2">Front-End Developer</p>
+                            <p class="text-gray-300">Senior FrontEnd-stack yang mengkhususkan diri dalam Html, Css, dan JavaScript.</p>
                         </div>
                         
                         <div class="text-center">
@@ -547,9 +549,9 @@
                                     <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Team Member" class="w-full h-full object-cover">
                                 </div>
                             </div>
-                            <h4 class="text-xl font-bold mb-2">Emma Rodriguez</h4>
-                            <p class="text-secondary mb-2">Project Manager</p>
-                            <p class="text-gray-300">Ensures projects are delivered on time, on budget, and exceed expectations.</p>
+                            <h4 class="text-xl font-bold mb-2">Jofantino Reyes</h4>
+                            <p class="text-secondary mb-2">Front-End Developer</p>
+                            <p class="text-gray-300">Senior Di FrontEnd-stack Dengan Bahasa Yang Atau Framework Yang Beragam</p>
                         </div>
                     </div>
                 </div>
@@ -557,34 +559,34 @@
         </section>
 
         <!-- Contact Page -->
-        <section id="contact" class="page hidden">
+        <section id="contact" class="contact page hidden">
             <section class="container mx-auto px-6 py-20">
                 <div class="max-w-4xl mx-auto text-center mb-16">
                     <h2 class="text-3xl md:text-4xl font-bold mb-4">Contact Us</h2>
                     <div class="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mb-6"></div>
-                    <p class="text-gray-300">Ready to start your project or have questions? Get in touch with our team.</p>
+                    <p class="text-gray-300">Siap untuk memulai proyek Anda atau memiliki pertanyaan? Hubungi tim kami.</p>
                 </div>
                 
                 <div class="flex flex-col lg:flex-row gap-12">
                     <div class="lg:w-1/2">
                         <form class="space-y-6">
                             <div>
-                                <label for="name" class="block text-gray-300 mb-2">Your Name</label>
+                                <label for="name" class="block text-gray-300 mb-2">Nama Kamu</label>
                                 <input type="text" id="name" class="w-full bg-gray-900/50 backdrop-blur-sm border border-gray-800 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent" placeholder="John Doe">
                             </div>
                             
                             <div>
-                                <label for="email" class="block text-gray-300 mb-2">Email Address</label>
+                                <label for="email" class="block text-gray-300 mb-2">Email Kamu</label>
                                 <input type="email" id="email" class="w-full bg-gray-900/50 backdrop-blur-sm border border-gray-800 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent" placeholder="john@example.com">
                             </div>
                             
                             <div>
-                                <label for="subject" class="block text-gray-300 mb-2">Subject</label>
+                                <label for="subject" class="block text-gray-300 mb-2">Ide Project Mu</label>
                                 <input type="text" id="subject" class="w-full bg-gray-900/50 backdrop-blur-sm border border-gray-800 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent" placeholder="Website Development Inquiry">
                             </div>
                             
                             <div>
-                                <label for="message" class="block text-gray-300 mb-2">Your Message</label>
+                                <label for="message" class="block text-gray-300 mb-2">Pesan Kamu</label>
                                 <textarea id="message" rows="5" class="w-full bg-gray-900/50 backdrop-blur-sm border border-gray-800 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent" placeholder="Tell us about your project..."></textarea>
                             </div>
                             
@@ -607,9 +609,9 @@
                                         </svg>
                                     </div>
                                     <div>
-                                        <h4 class="text-lg font-bold mb-1">Address</h4>
-                                        <p class="text-gray-300">123 Tech Street, Digital City</p>
-                                        <p class="text-gray-300">San Francisco, CA 94107</p>
+                                        <h4 class="text-lg font-bold mb-1">Alamat</h4>
+                                        <p class="text-gray-300">Genteng, Banyuwangi</p>
+                                        <p class="text-gray-300">Genteng</p>
                                     </div>
                                 </div>
                                 
@@ -621,8 +623,8 @@
                                     </div>
                                     <div>
                                         <h4 class="text-lg font-bold mb-1">Phone</h4>
-                                        <p class="text-gray-300">+1 (555) 123-4567</p>
-                                        <p class="text-gray-300">Mon-Fri, 9am-6pm PST</p>
+                                        <p class="text-gray-300">+6289 5368 7570 54</p>
+                                        <p class="text-gray-300">Senin-Minggu, 14:00-21:00</p>
                                     </div>
                                 </div>
                                 
@@ -672,7 +674,6 @@
         </section>
     </div>
 
-    <!-- Footer -->
     <footer class="border-t border-gray-800 py-12">
         <div class="container mx-auto px-6">
             <div class="flex flex-col md:flex-row justify-between items-center">
@@ -758,6 +759,30 @@
                 typingElement.style.animation = null;
             }
         });
+
+        // Debounce scroll/resize handlers
+function debounce(func, timeout = 200) {
+  let timer;
+  return (...args) => {
+    clearTimeout(timer);
+    timer = setTimeout(() => func.apply(this, args), timeout);
+  };
+}
+
+window.addEventListener('resize', debounce(() => {
+  // Handle resize
+}));
+
+// Use IntersectionObserver for scroll events
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      // Lazy-load content
+    }
+  });
+});
+
+
     </script>
 </body>
 </html>
